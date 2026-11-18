@@ -24,4 +24,38 @@ h2 {
 img {
     width: 700px;
     height: auto;
+    border-radius: 10px;
 }
+
+.tabela-funcao {
+    width: 100%;
+    max-width: 500px;
+    border-collapse: collapse;
+    margin: 20px auto;
+    background-color: white;
+}
+
+.tabela-funcao th,
+.tabela-funcao td {
+    border: 1px solid #ccc;
+    padding: 10px; 
+    text-align: center;
+}
+
+.tabela-funcao th {
+    background-color: #2980b9;
+    color: white;
+    font-weight: bold;
+}
+
+.caixa-formula {
+    max-width: 500px; /* Mesma largura máxima da tabela */
+    margin: -10px auto 30px auto; /* Puxa para perto da tabela e dá espaço embaixo */
+    padding: 12px;
+    background-color: #e8f4f8;
+    border: 1px solid #7bb2d6;
+    border-radius: 5px;
+    text-align: center;
+    color: #2c3e50;
+}
+
