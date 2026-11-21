@@ -3,81 +3,102 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projeto programacao web</title>
+    <title>Portal das Funções Matemáticas</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-    <h1><b>Desvendando as Funções Matemáticas</b></h1>
+    <header id="=topo">
+        <div class="container">
+            <h1>Portal das Funções Matemáticas</h1>
+            <p>Aprendendo de forma visual e prática os conceitos das Funções de 1° e 2° grau</p>
+        </div>
 
-    <ul>
-        <li><a href="index.html">Início</a></li>
-        <li><a href="funcao-afim">Função de 1° Grau</a></li>
-        <li><a href="funcao-quadratica">Função de 2° Grau</a></li>
-    </ul>
+        <nav class="menu-principal">
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="afim.html">Função Afim (1° Grau)</a></li>
+                <li><a href="quadratica.html">Função Quadrática(2° Grau)</a></li>
+                <li><a href="#links-uteis">Materiais Externos</a></li>
+            </ul>
+        </nav>
 
     </header>
 
-    <div class="conteudo-principal">
+    <main>
 
-        <div class="texto-inicial">
+        <section class="introducao">
 
-             <p>Bem-vindo ao nosso portal sobre Matemática! O objetivo deste site é descomplicar um dos conceitos mais importantes das ciências exatas: as <strong>Funções Matemáticas.</strong></p>
-            <h2>O que é uma Função Matemática?</h2>
+            <h2>O que são Funções Matemáticas?</h2>
 
-            <p>De forma simples, uma função funciona como uma máquina de transformação. Ela estabelece uma relação entre dois conjuntos de números. Você insere um valor (geralmente chamado de <em>x</em>), a "máquina" aplica uma regra matemática, e devolve um novo valor como resultado (geralmente chamado de <em>y</em> ou <em>f(x)</em>).</p>
-            <div class="imagem-maquina">
-                <img src="imagens/Gemini_Generated_Image_po19a9po19a9po19.jpg" alt="ilustração da função como uma máquina">
+            <p>Na matemática, uma <strong>Função</strong> é uma regra que relaciona cada elemento de um conjunto 
+                (chamado de <strong>Domínio</strong>) a um único elemento de outro conjunto (chamado de <strong>Contradomínio</strong>).
+                Elas estão presentes no nosso cotidiano, desde o cálculo do valor de uma corrida de aplicativo até
+                a trajetória de uma bola chutada para o gol.
+            </p>
+            <p>Para que uma relação entre conjuntos seja considerada uma função, ela precisa obedecer rigorosamente a duas regras:</p>
+
+            <ul>
+                <li><strong>Todos participam:</strong> Todo elemento do conjunto de partida (Domínio) deve estar ligado a algum 
+                    elemento do conjunto de chegada (Contradomínio). Não pode sobrar ninguém sem flecha no Domínio.
+                </li>
+                <li><strong>Unicidade:</strong> Cada elemento do Domínio pode se ligar a <em>apenas um</em> elemento
+                 do Contradomínio. Dois elementos diferentes do Domínio podem até apontar para o mesmo valor no 
+                 Contradomínio, mas o contrário <strong>NÃO PODE</strong> acontecer (um único elemento do Domínio 
+                 nunca pode ter duas setas saindo dele).
+                </li>
+            </ul>
+
+            <h3>Domínio, Contradomínio e Conjunto Imagem</h3>
+            <p>
+                Além dos conjuntos de partida e chegada, existe um terceiro conceito essencial: a <strong>Imagem da Função (Im)</strong>. 
+                Enquanto o Contradomínio reúne todos os valores possíveis de chegada no conjunto B, o <strong>Conjunto Imagem</strong> 
+                é formado exclusivamente pelos elementos de B que efetivamente receberam alguma flecha (ou seja, os resultados reais calculados pela função).
+            </p>
+            <p>Neste portal educativo, dividimos o estudo em dois grandes pilares para facilitar o seu aprendizado</p>
+
+        </section>
+
+        <section class="topicos">
+
+            <h2>Escolha um tópico para estudar</h2>
+
+            <div class="grade-cartoes">
+                <div class="cartao">
+                    <h3>1. Função Afim (1° Grau)</h3>
+                    <p>Entenda a equação da reta <strong>f(x) = ax + b</strong>, taxa de variação, raiz da Função
+                        e gráficos crescentes ou decrescentes.
+                    </p>
+                    <a href="afim.html" class="botao">Estudar Função Afim</a>
+                </div>
+                <div class="cartao">
+                    <h3>2. Função Quadrática</h3>
+                    <p>Explore a parábola <strong>f(x) = ax² + bx + c</strong>, concavidade, fórmula de Bhaskara
+                        e o cálculo do vértice.
+                    </p>
+                    <a href="quadratica.html" class="botao">EStudar Função Quadrática</a>
+                </div>
             </div>
-            <h3><strong>Exemplo:</strong></h3>
-            <p>Se você vai ao mercado comprar maçãs e cada uma custa R$ 2,00, o valor total que você vai pagar depende diretamente da quantidade de maçãs que você colocar na cesta. Isso é uma função na vida real! O preço final está em <em>função</em> da quantidade.</p>   
-            
-            <table class="tabela-funcao">
-                <thead>
-                    <tr>
-                        <th>Quantidade de Maças (x)</th>
-                        <th>Preço Total em R$ (f(x))</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>1</td>
-                        <td>2,00</td>
-                    </tr>
-                    <tr>
-                        <td>2</td>
-                        <td>4,00</td>
-                    </tr>
-                    <tr>
-                        <td>3</td>
-                        <td>6,00</td>
-                    </tr>
-                    <tr>
-                        <td>4</td>
-                        <td>8,00</td>
-                    </tr>
-                    <tr>
-                        <td>5</td>
-                        <td>10  ,00</td>
-                    </tr>
-                </tbody>
-            </table>
+        </section>
 
-            <div class="caixa-formula">
-        <p>Fórmula aplicada: <strong>f(x) = 2x</strong></p>
-        </div>
-        
-        </div>
+        <section id="links-uteis" class="links-externos">
 
-        <div class="links-externos">
-        <h2>Para Aprender Mais (Links Externos)</h2>
-        <ul>
-            <li><a href="https://pt.khanacademy.org/math/algebra/x2f8bb11595b61c86:functions" target="_blank">Khan Academy - Introdução às Funções</a></li>
-            <li><a href="https://www.somatematica.com.br/emedio/funcoes/funcoes.php" target="_blank">Só Matemática - Funções</a></li>
-        </ul>
-    </div>
-    </div>
-   
+            <h2>Materiais Externos Recomendados</h2>
+            <p>Quer apronfundar ainda mais ou testar gráficos interativos? Confira estes portais gratuitos:</p>
+            <ul>
+                <li><a href="https://www.geogebra.org/graphing" target="_blank">GeoGebra Calculadora Gráfica</a> – Desenhe gráficos de funções em tempo real.</li>
+                <li><a href="https://pt.khanacademy.org/math/algebra" target="_blank">Khan Academy (Álgebra e Funções)</a> – Videoaulas e exercícios interativos.</li>
+                <li><a href="https://brasilescola.uol.com.br/matematica/funcao.htm" target="_blank">Brasil Escola – Funções</a> – Resumos teóricos e exemplos resolvidos.</li>
+            </ul>
+
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>Projeto de Introdução a programação Web- UNICAP(Universidade Católica de Pernambuco)</p>
+            <p><a href="#topo">Voltar ao topo ↑</a></p>
+        </div>
+    </footer>
     
 </body>
 </html>
