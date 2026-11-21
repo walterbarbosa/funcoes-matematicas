@@ -1,0 +1,104 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f7f9;
+    color: #333333;
+    line-height: 1.6;
+}
+
+header {
+    background-image: linear-gradient(to bottom, rgba(244, 247, 249, 0.35), rgba(244, 247, 249, 0.55)), url('imagens/Fundo-cabecalho.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-top: 40px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.3rem;
+    color: #162c54;
+    font-weight: 800;
+    margin-bottom: 8px;
+    text-shadow: 1px 1px 3px rgba(255, 255, 255, 0.9);
+}
+
+header p {
+    font-size: 1.1rem;
+    color: #1e3c72;
+    font-weight: 600;
+    margin-bottom: 25px;
+    text-shadow: 1px 1px 3px rgba(255, 255, 255, 0.9);
+}
+
+.menu-principal {
+    background-color: #162c54;
+    border-top: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.menu-principal ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+}
+
+.menu-principal li a {
+    display: block;
+    color: #ffffff;
+    text-decoration:none;
+    padding: 14px 22px;
+    font-weight: 600;
+    
+}
+
+.menu-principal li a:hover {
+    transform: translateY(-2px);
+}
+
+main {
+    padding: 30px 20px;
+}
+
+section {
+    background-color: #ffffff;
+    padding: 25px;
+    margin-bottom: 25px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+section h2 {
+    color: #1e3c72;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #e1e8ed;
+}
+
+.container {
+    max-width: 1000px;
+    margin: auto;
+    pad: 0 20px;
+}
+
+.bloco-imagem {
+    text-align: center;
+    margin: 25px auto;
+    background-color: #ffffff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 0 rgba(0, 0, 0, 0.08);
+}
+
+.bloco-imagem img {
+    max-width: 550px;
+    width: 100%;
+    height: auto;
+    border-radius: 6px;
+}
+
+footer {
+    text-align: center;
+    font-weight: 200px;
+}
+
+
