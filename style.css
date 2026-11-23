@@ -2,15 +2,12 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: #f4f7f9;
     color: #333333;
-    text-align: left;
 }
 
 
 header {
     background-image: linear-gradient(to bottom, rgba(244, 247, 249, 0.35), rgba(244, 247, 249, 0.55)), url('imagens/Fundo-cabecalho.jpg');
     background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
     padding-top: 30px;
     text-align: center;
 }
@@ -20,7 +17,6 @@ header h1 {
     color: #162c54;
     font-weight: 800;
     margin-bottom: 8px;
-    text-shadow: 1px 1px 3px rgba(255, 255, 255, 0.9);
 }
 
 header p {
@@ -75,7 +71,7 @@ section {
 section h2 {
     color: #1e3c72;
     margin-bottom: 15px;
-    border-bottom: 2px solid #e1e8ed;
+    border-bottom: 2px solid #e9eef2;
     padding-bottom: 8px;
 }
 
@@ -105,8 +101,8 @@ section li {
 .cartao {
     flex: 1;
     min-width: 280px;
-    background-color: #f9fbfd;
-    border: 1px solid #dce4ec;
+    background-color: #ffffff;
+    border-left: 4px solid #2a5298;
     border-radius: 8px;
     padding: 20px;
     display: flex;
@@ -283,4 +279,48 @@ footer:hover {
     max-width: 380px;
     margin: 12px auto;
     border: none;
+}
+
+.conclusao {
+    padding: 85px 5px 5px;
+    
+}
+
+.faixa-comemoracao {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin: 30px auto;
+    flex-wrap: wrap;
+}
+
+.img-palavra {
+    max-width: 290px;
+    height: auto;
+    border: none;
+
+}
+
+.img-boneco {
+    max-width: 330px;
+}
+
+.img-palavra-quadratica {
+   max-width: 450px;
+    height: auto;
+    border: none;  
+}
+
+.form-linha {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+.campo-grupo {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    min-width: 320px;
 }

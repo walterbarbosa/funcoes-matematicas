@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aplicações Quadráticas no dia a dia- Portal das Funções</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Aplicações da Função Quadrática (2º Grau)</h1>
+            <p>Estudos de caso reais: como modelar trajetórias, lucros e áreas máximas usando f(x) = ax² + bx + c</p>
+        </div>
+
+        <nav class="menu-principal">
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="afim.html">Função Afim (1º Grau)</a></li>
+                <li><a href="quadratica.html">Função Quadrática (2º Grau)</a></li>
+                <li><a href="aplicacao-afim.html">Aplicações (1º Grau)</a></li>
+                <li><a href="aplicacao-quadratica.html" class="ativo">Aplicações (2º Grau)</a></li>
+            </ul>
+
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Como Transformar um Problema Real em uma Função Quadrática?</h2>
+            <p>
+                Diferente da função afim (onde o crescimento é constante), usamos a lei f(x) = ax² + bx + c, sempre que um fenômeno possui <strong>aceleração</strong>, envolve o <strong>produto de duas grandezas</strong> (como área ou receita) ou atinge um <strong>ponto de máximo ou mínimo</strong>:
+            </p>
+            <ul>
+                <li><strong>Vértice — Coordenada xᵥ (-b / 2a):</strong> Indica o momento ou a quantidade ideal que gera o melhor ou pior resultado (tempo até o ponto mais alto, preço que maximiza o lucro).</li>
+                <li><strong>Vértice — Coordenada yᵥ (-Δ / 4a):</strong> Indica o próprio valor máximo ou mínimo alcançado (altura máxima, lucro máximo, custo mínimo).</li>
+                <li><strong>Raízes (Zeros da Função):</strong> Representam o início e o fim do fenômeno (instante em que um objeto toca o solo ou pontos de equilíbrio financeiro).</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Caso 1: Arremesso no Basquete (Altura Máxima e Alcance)</h2>
+
+            <div class="flex-duas-colunas">
+                <div class="col-afim">
+                    <h3>O Problema</h3>
+                    <p>
+                        Durante uma partida, um jogador arremessa uma bola de basquete cuja altura <strong>h(t)</strong> (em metros) em função do tempo <strong>t</strong> (em segundos) é descrita por:
+                    </p>
+                    <p class="destaque-formula">h(t) = -5t² + 10t + 2</p>
+                    <p>
+                        Qual é a <strong>altura máxima</strong> que a bola atinge durante o lançamento e em quantos segundos ela chega nesse ponto?
+                    </p>
+                </div>
+
+                <div class="col-afim">
+                    <h3>Resolução Passo a Passo</h3>
+                    <p>Como a = -5 (negativo), a parábola tem concavidade para baixo e possui um ponto de máximo:</p>
+                    <ol>
+                        <li><strong>Instante da altura máxima (tᵥ):</strong> tᵥ = -b / 2a = -10 / (2 · -5) = -10 / -10 → <strong>t = 1 segundo</strong>.</li>
+                        <li><strong>Altura máxima (hᵥ):</strong> Substituímos t = 1 na lei: h(1) = -5(1)² + 10(1) + 2 = -5 + 10 + 2 → <strong>7 metros</strong>.</li>
+                        <li><strong>Altura inicial (c):</strong> No instante t = 0, a bola saiu da mão do jogador a <strong>2 metros</strong> do chão.</li>
+                    </ol>
+                   
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Caso 2: Otimização de Preço e Lucro Máximo</h2>
+
+            <div class="flex-duas-colunas">
+                <div class="col-afim">
+                    <h3>O Problema</h3>
+                    <p>
+                        Uma pequena fábrica de camisetas personalizadas descobriu que seu lucro diário <strong>L(x)</strong> (em reais), em função da quantidade <strong>x</strong> de lotes produzidos, segue a lei:
+                    </p>
+                    <p class="destaque-formula">L(x) = -2x² + 80x - 350</p>
+                    <p>
+                        Quantos lotes a fábrica deve produzir por dia para obter o <strong>lucro máximo</strong>, e qual será esse lucro?
+                    </p>
+                </div>
+
+                <div class="col-afim">
+                    <h3>Resolução Passo a Passo</h3>
+                    <p>Produzir pouco gera prejuízo pelos custos fixos (-350), e produzir demais aumenta custos extras. O equilíbrio está no vértice:</p>
+                    <ol>
+                        <li><strong>Quantidade ideal (xᵥ):</strong> xᵥ = -80 / (2 · -2) = -80 / -4 → <strong>20 lotes por dia</strong>.</li>
+                        <li><strong>Lucro máximo (Lᵥ):</strong> Substituímos x = 20: L(20) = -2(20)² + 80(20) - 350 = -800 + 1600 - 350 → <strong>R$ 450,00 por dia</strong>.</li>
+                    </ol>
+                    <p>
+                        <strong>Conclusão:</strong> Produzindo exatamente <strong>20 lotes</strong>, o lucro atinge o teto de <strong>R$ 450,00</strong>.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Caso 3: Engenharia e Aproveitamento de Área Máxima</h2>
+            <p>
+                Um produtor rural possui <strong>40 metros de cerca</strong> para fechar um canteiro retangular encostado em um muro (precisando cercar apenas três lados: duas larguras <em>x</em> e um comprimento 40 - 2x). Veja como a área se comporta:
+            </p>
+
+            <table class="tabela-valores">
+                <thead>
+                    <tr>
+                        <th>Largura (x)</th>
+                        <th>Comprimento (40 - 2x)</th>
+                        <th>Área: A(x) = -2x² + 40x</th>
+                        <th>Interpretação Prática</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>5 m</td>
+                        <td>30 m</td>
+                        <td>150 m²</td>
+                        <td>Canteiro muito estreito e comprido</td>
+                    </tr>
+                    <tr>
+                        <td>10 m</td>
+                        <td>20 m</td>
+                        <td><strong>200 m²</strong></td>
+                        <td><strong>Vértice (xᵥ = 10): Área Máxima possível!</strong></td>
+                    </tr>
+                    <tr>
+                        <td>15 m</td>
+                        <td>10 m</td>
+                        <td>150 m²</td>
+                        <td>Canteiro largo demais, perde área útil</td>
+                    </tr>
+                </tbody>
+            </table>
+            <h3>Com isso aprendemos um pouco sobre função Quadrática, uhu!!</h3>
+            <div class="faixa-comemoracao">
+                <img src="imagens/palavra-funcao.jpg" alt="Função" class="img-palavra">
+                <img src="imagens/comemoracao-quadratica.jpg" alt="Personagem comemorando" class="img-boneco">
+                <img src="imagens/palavra-quadratica.jpg" alt="Quadrática" class="img-palavra-quadratica">
+            </div>
+
+        </section>
+
+        <section id="contato-whatsapp">
+    <h2>Dúvidas ?</h2>
+    <p>Preencha os campos abaixo para enviar sua dúvida diretamente para o WhatsApp da nossa equipe:</p>
+
+    <form onsubmit="enviarWhatsApp(event)">
+        <div class="form-linha">
+            <div class="campo-grupo">
+                <label for="nome">Seu Nome:</label>
+                <input type="text" id="nome" placeholder="Digite seu nome" required>
+            </div>
+
+            <div class="campo-grupo">
+                <label for="assunto">Tema da Dúvida:</label>
+                <select id="assunto">
+                    <option value="Função Afim (1º Grau)">Função Afim (1º Grau)</option>
+                    <option value="Função Quadrática (2º Grau)">Função Quadrática (2º Grau)</option>
+                    <option value="Aplicações Práticas">Aplicações Práticas</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="campo-grupo">
+            <label for="duvida">Sua Dúvida:</label>
+            <textarea id="duvida" rows="4" placeholder="Escreva aqui sua pergunta..." required></textarea>
+        </div>
+
+        <button type="submit" class="botao-whatsapp">Enviar Dúvida via WhatsApp</button>
+    </form>
+</section>
+    </main>
+    
+</body>
+</html>

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aplicações da Função Afim no dia a dia- Portal das Funções</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <h1>Aplicações da Função Afim (1° Grau)</h1>
+            <p>Estudos de caso reais: como modelar e resolver problemas do cotidiano usando f(x) = ax + b</p>
+        </div>
+
+        <nav class="menu-principal">
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="afim.html">Função Afim (1º Grau)</a></li>
+                <li><a href="quadratica.html">Função Quadrática (2º Grau)</a></li>
+                <li><a href="aplicacao-afim.html" class="ativo">Aplicações (1º Grau)</a></li>
+                <li><a href="aplicacao-quadratica.html">Aplicações (2º Grau)</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <main>
+
+            <section>
+                <h2>Como transformar um problema real em uma Função Afim?</h2>
+                <p>
+                    Sempre que uma situação cotidiana envolve um <strong>custo ou valor inicial fixo</strong> somado ou subtraído a uma <strong>taxa constante de variação</strong>
+                    por unidade, podemos modela-la pela lei <strong>f(x) = ax + b:</strong>
+                </p>
+                <ul>
+                    <li><strong>Variável independente (x):</strong> é a grandeza que controlamos ou medimos (quilômetros rodados, horas trabalhadas, peças vendidas etc..)</li>
+                    <li><strong>Coeficiente Angular (a):</strong>É o valor que se repete a cada unidade de <em>x</em> (preço por km, comissão por venda, consumo por hora).</li>
+                    <li><strong>Coeficiente Linear (b):</strong>É o valor fixo inicial, pago ou recebido mesmo quando <em>x = 0</em> (bandeirada, salário base, taxa de adesão).</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>Caso 1: Planejamento de Gastos com Transporte (Corrida de Táxi)</h2>
+
+            <div class="flex-duas-colunas">
+
+                <div class="col-afim">
+                    <h3>O Problema</h3>
+                    <p>
+                        Um aplicativo de transporte cobra uma taxa fixa de embarque (bandeirada) de <strong>R$ 5,00</strong> e mais <strong>R$ 3,00</strong> por cada quilômetro percorrido. Um estudante tem <strong>R$ 41,00</strong> disponíveis para voltar da universidade para casa. Qual é a distância máxima que ele consegue percorrer?
+                    </p>
+
+                    <h3>Modelagem Matemática</h3>
+                    <ul>
+                        <li><strong>x</strong> = distância percorrida em quilômetros (km)</li>
+                        <li><strong>f(x)</strong> = valor total da corrida em reais (R$)</li>
+                        <li><strong>b = 5</strong> (taxa fixa inicial) e <strong>a = 3</strong> (taxa por km)</li>
+                    </ul>
+                    <p class="destaque-formula">f(x) = 3x + 5</p>
+                </div>
+
+                <div class="col-afim">
+                    <h3>Resolução Passo a Passo</h3>
+                    <p>Como o estudante dispõe de <strong>R$ 41,00</strong>, substituímos <>f(x) = 41</> na função:</p>
+                    <ol>
+                        <li>Montamos a equação: 3x + 5 = 41</li>
+                        <li>Subtraímos a taxa fixa: 3x = 41 - 5 → 3x = 36</li>
+                        <li>Dividimos pela taxa por km: x = 36 / 3 → <strong>x = 12 km</strong></li>
+                    </ol>
+                    <p class="conclusao">
+                        <strong>Conclusão:</strong> Com R$ 41,00, ele consegue percorrer exatamente <strong>12 km</strong>.
+                    </p>
+    
+                </div>
+            </div>
+            </section>
+
+            <section>
+                <h2>Caso 2: Meta de Vendas e Renda Mensal</h2>
+
+            <div class="flex-duas-colunas">
+                <div class="col-afim">
+                    <h3>O Problema</h3>
+                    <p>
+                        Uma vendedora de uma loja de eletrônicos recebe um salário fixo mensal de <strong>R$ 1.500,00</strong> mais uma comissão de <strong>R$ 50,00</strong> por cada notebook vendido no mês. Quantos notebooks ela precisa vender para atingir uma renda mensal de <strong>R$ 2.750,00</strong>?
+                    </p>
+
+                    <h3>Modelagem Matemática</h3>
+                    <ul>
+                        <li><strong>x</strong> = quantidade de notebooks vendidos no mês</li>
+                        <li><strong>f(x)</strong> = salário total recebido no final do mês (R$)</li>
+                        <li><strong>b = 1500</strong> (salário base) e <strong>a = 50</strong> (comissão por unidade)</li>
+                    </ul>
+                    <p class="destaque-formula">f(x) = 50x + 1500</p>
+                </div>
+
+                <div class="col-afim">
+                    <h3>Resolução Passo a Passo</h3>
+                    <p>Queremos descobrir o valor de <em>x</em> para que f(x) = 2750:</p>
+                    <ol>
+                        <li>Montamos a equação: 50x + 1500 = 2750</li>
+                        <li>Subtraímos o salário fixo: 50x = 2750 - 1500 → 50x = 1250</li>
+                        <li>Dividimos pela comissão unitária: x = 1250 / 50 → <strong>x = 25 notebooks</strong></li>
+                    </ol>
+                    <p class="conclusao">
+                        <strong>Conclusão:</strong> Ela precisa vender <strong>25 notebooks</strong> no mês para alcançar R$ 2.750,00.
+                    </p>
+                    
+                </div>
+            </div>
+            </section>
+
+            <section>
+                <h2>Caso 3: Consumo de Bateria ao Longo do Tempo (Função Decrescente)</h2>
+            <p>
+                Nem toda função afim é crescente! Quando uma grandeza diminui a uma taxa constante, o coeficiente angular <strong>a</strong> é <strong>negativo (a &lt; 0)</strong>.
+            </p>
+
+            <table class="tabela-valores">
+                <thead>
+                    <tr>
+                        <th>Situação</th>
+                        <th>Lei de Formação</th>
+                        <th>Significado de a e b</th>
+                        <th>Raiz da Função (f(x) = 0)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Notebook carregado em <strong>100%</strong> que consome <strong>20% de bateria por hora</strong> de uso contínuo.</td>
+                        <td>f(x) = -20x + 100</td>
+                        <td>b = 100% (carga inicial)<br>a = -20% (queda por hora)</td>
+                        <td>-20x + 100 = 0 → <strong>x = 5 horas</strong><br>(tempo até a bateria zerar)</td>
+                    </tr>
+                </tbody>
+            </table>
+            <h3>Com isso aprendemos um pouco sobre função afim, uhu!!</h3>
+            <div class="faixa-comemoracao">
+                <img src="imagens/palavra-funcao.jpg" alt="Função" class="img-palavra">
+                <img src="imagens/comemoracao-afim.jpg" alt="Personagem comemorando" class="img-boneco">
+                <img src="imagens/palavra-afim.jpg" alt="Afim" class="img-palavra">
+            </div>
+        </section>
+        </main>
+    
+</body>
+</html>
