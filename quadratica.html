@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Função Quadrática (2° Grau)- Portal das Funções</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header id="topo">
+        <div class="container">
+            <h1>Função Quadrática (2° Grau)</h1>
+            <p>Explore as parábolas, raízes, vértice e aplicações da função polinomial do segundo grau</p>
+        </div>
+
+        <nav class="menu-principal">
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="afim.html">Função Afim (1º Grau)</a></li>
+                <li><a href="quadratica.html" class="ativo">Função Quadrática (2º Grau)</a></li>
+                <li><a href="afim-exercicios.html">Exercícios (1º Grau)</a></li>
+                <li><a href="quadratica-exercicios.html">Exercícios (2º Grau)</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+
+        <section>
+            <h2>O que é uma Função Quadrática?</h2>
+
+            <div class="flex-duas-colunas">
+               
+                <div class="col-afim">
+                    <h3>Conceito</h3>
+                    <p>
+                        A <strong>Função Quadrática</strong>, ou função do 2º grau, é qualquer função polinomial com lei de formação:
+                    </p>
+                    <p class="destaque-formula">f(x) = ax² + bx + c</p>
+                    <p>Onde <strong>a, b</strong> e <strong>c</strong> são números reais e <strong>a ≠ 0</strong>:</p>
+                    <ul>
+                        <li><strong>a</strong> define a abertura e a orientação da concavidade da parábola.</li>
+                        <li><strong>b</strong> indica a inclinação da parábola ao cruzar o eixo Y.</li>
+                        <li><strong>c</strong> é o termo independente: mostra o ponto exato <code>(0, c)</code> onde a curva corta o eixo Y.</li>
+                    </ul>
+                </div>
+
+                <div class="col-afim">
+                    <h3>Elementos da Parábola</h3>
+                    <p>O gráfico de toda função do 2º grau é uma curva simétrica chamada <strong>parábola</strong>:</p>
+                    <ul>
+                        <li><strong>Concavidade para cima (a > 0):</strong> A parábola tem formato de "U" e possui um ponto de <em>mínimo</em>.</li>
+                        <li><strong>Concavidade para baixo (a < 0):</strong> A parábola fica invertida e possui um ponto de <em>máximo</em>.</li>
+                        <li><strong>Raízes (Zeros):</strong> Valores de <em>x</em> onde <code>f(x) = 0</code>, calculados pela fórmula de Bhaskara (<code>Δ = b² - 4ac</code>).</li>
+                        <li><strong>Vértice V(xᵥ, yᵥ):</strong> Ponto de virada da curva, dado por <code>xᵥ = -b / 2a</code> e <code>yᵥ = -Δ / 4a</code>.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="estudo-grafico">
+            <h2>Construindo a Parábola na Prática</h2>
+            <p>
+                Observe o exemplo da função <strong>f(x) = x² - 4x + 3</strong> (onde <code>a = 1</code>, <code>b = -4</code> e <code>c = 3</code>). 
+                Como <strong>a > 0</strong>, a concavidade é voltada para cima. Veja a tabela de pares ordenados:
+            </p>
+
+            <table class="tabela-valores">
+                <thead>
+                    <tr>
+                        <th>Valor de x (Entrada)</th>
+                        <th>Cálculo: f(x) = x² - 4x + 3</th>
+                        <th>Valor de y (Saída)</th>
+                        <th>Par Ordenado (x, y)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>0</td>
+                        <td>(0)² - 4(0) + 3 = 0 - 0 + 3</td>
+                        <td>3</td>
+                        <td>(0, 3) — Intercepto Y</td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>(1)² - 4(1) + 3 = 1 - 4 + 3</td>
+                        <td>0</td>
+                        <td>(1, 0) — 1ª Raiz</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>(2)² - 4(2) + 3 = 4 - 8 + 3</td>
+                        <td>-1</td>
+                        <td>(2, -1) — Vértice (Mínimo)</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>(3)² - 4(3) + 3 = 9 - 12 + 3</td>
+                        <td>0</td>
+                        <td>(3, 0) — 2ª Raiz</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>(4)² - 4(4) + 3 = 16 - 16 + 3</td>
+                        <td>3</td>
+                        <td>(4, 3)</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="bloco-imagem">
+                <img src="imagens/grafico-funcao-quadratica.jpg" alt="Gráfico de função quadrática do exemplo da tabela">
+                <p>Parábola correspondente aos pares ordenados da tabela acima, com vértice de mínimo em (2, -1) e raízes em x = 1 e x = 3.</p>
+            </div>
+
+            <section>
+            <h2>A Função Quadrática no Nosso Cotidiano</h2>
+            <p>
+                As curvas parabólicas estão presentes na física, na engenharia e nos esportes sempre que existe aceleração ou reflexão de ondas:
+            </p>
+
+            <div class="flex-duas-colunas">
+                <div class="cartao-cotidiano">
+                    <h3>1. Lançamento de Projéteis e Esportes</h3>
+                    <img src="imagens/cotidiano-basquete.jpg" alt="" class="img-cotidiano">
+                    <p>
+                        Quando um jogador chuta uma bola de futebol em direção ao gol ou lança uma bola de basquete, a trajetória descrita no ar sob ação da gravidade forma uma <strong>parábola com concavidade para baixo (a &lt; 0)</strong>.
+                    </p>
+                    <p>
+                        O <strong>vértice</strong> da função indica exatamente a <em>altura máxima</em> que a bola atinge antes de começar a cair.
+                    </p>
+                </div>
+
+                <div class="cartao-cotidiano">
+                    <h3>2. Antenas Parabólicas e Faróis</h3>
+                    <img src="imagens/cotidiano-antena.jpg" alt="" class="img-cotidiano">
+                    <p>
+                        O formato curvo das antenas parabólicas e dos refletores de faróis automotivos utiliza a propriedade geométrica do <strong>foco da parábola</strong>.
+                    </p>
+                    <p>
+                        Todos os sinais de satélite que batem na superfície curva são refletidos para um único ponto central (o receptor), garantindo máxima intensidade de sinal.
+                    </p>
+                </div>
+            </div>
+
+            
+            <div style="text-align: center; margin-top: 25px;">
+                <a href="quadratica-exercicios.html" class="botao">Praticar Exercícios →</a>
+            </div>
+        </section>
+            
+    </main>
+    
+</body>
+</html>

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Função Afim (1° Grau)- Portal das Funções</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header id="topo">
+        <div class="container">
+            <h1>Função Afim (1° Grau)</h1>
+            <p>Entenda a função polinomial do primeiro grau e o comportamento das retas</p>
+        </div>
+        <nav class="menu-principal">
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="afim.html" class="ativo">Função Afim (1º Grau)</a></li>
+                <li><a href="quadratica.html">Função Quadrática (2º Grau)</a></li>
+                <li><a href="afim-exercicios.html">Exercícios (1º Grau)</a></li>
+                <li><a href="quadratica-exercicios.html">Exercícios (2º Grau)</a></li>
+            </ul>
+        </nav>
+
+        </header>
+
+        <main>
+            <section>
+                <h2>O que é uma Função Afim?</h2>
+                
+                <div class="flex-duas-colunas">
+
+                    <div class="col-afim">
+                        <h3>Conceito</h3>
+                       <p>
+                        A <strong>Função Afim</strong>, ou função do 1º grau, é qualquer função que possui a lei de formação:
+                    </p>
+                    <p class="destaque-formula">f(x) = ax + b</p>
+                    <p>Onde:</p>
+                    <ul>
+                        <li><strong>a</strong> é o coeficiente angular (taxa de variação). Determina a inclinação da reta.</li>
+                        <li><strong>b</strong> é o coeficiente linear (termo constante). Indica onde a reta cruza o eixo Y.</li>
+                        <li><strong>x</strong> é a variável independente e <strong>f(x)</strong> (ou <strong>y</strong>) é a variável dependente.</li>
+                    </ul> 
+                    </div>
+
+                    <div class="col-afim col-comportamento">
+                       <h3>Comportamento da Reta</h3>
+                    <p>O sinal do coeficiente <strong>a</strong> define a direção da reta no plano cartesiano:</p>
+                    <ul>
+                        <li><strong>Função Crescente (a > 0):</strong> Quanto maior o valor de <em>x</em>, maior será o resultado de <em>y</em> (a reta sobe para a direita).</li>
+                        <li><strong>Função Decrescente (a < 0):</strong> Quanto maior o valor de <em>x</em>, menor será o resultado de <em>y</em> (a reta desce para a direita).</li>
+                    </ul>
+                    <p>
+                        <strong>Raiz (ou Zero) da Função:</strong> É o valor de <em>x</em> onde a reta corta o eixo X (quando <code>f(x) = 0</code>), calculado por <code>x = -b / a</code>.
+                    </p> 
+                    </div>
+                </div>
+            </section>
+
+            <section class="estudo-grafico">
+                <h2>Construindo o Gráfico na Prática</h2>
+                <p>
+                    Vamoss ver um exemplo prático de uma função crescente com a lei: <strong>f(x) = 2x - 1</strong>
+                    (onde a = 2 e b = -1).Para desenharmos o gráfico, escolhemos alguns valores para <strong>x</strong>
+                    e calculamos o respectivo <strong>y</strong>:
+                </p>
+
+                <table class="tabela-valores">
+                <thead>
+                    <tr>
+                        <th>Valor de x (Entrada)</th>
+                        <th>Cálculo: f(x) = 2x - 1</th>
+                        <th>Valor de y (Saída)</th>
+                        <th>Par Ordenado (x, y)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>-1</td>
+                        <td>2 × (-1) - 1 = -2 - 1</td>
+                        <td>-3</td>
+                        <td>(-1, -3)</td>
+                    </tr>
+                    <tr>
+                        <td>0</td>
+                        <td>2 × (0) - 1 = 0 - 1</td>
+                        <td>-1</td>
+                        <td>(0, -1)</td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>2 × (1) - 1 = 2 - 1</td>
+                        <td>1</td>
+                        <td>(1, 1)</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>2 × (2) - 1 = 4 - 1</td>
+                        <td>3</td>
+                        <td>(2, 3)</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div class="bloco-imagem">
+                <img src="imagens/grafico-funcao-afim.png" alt="Gráfico de uma função afim">
+                <p>Gráfico correspondente aos pares ordenados da tabela acima. Note que ela cruza o eixo Y no ponto (0, -1).</p>
+            </div>
+            </section>
+
+            <section>
+                <h2>A Função Afim no Nosso Cotidiano</h2>
+                <p>
+                Mesmo sem perceber, usamos funções do 1º grau todos os dias sempre que existe um <strong>valor fixo</strong> somado a uma <strong>taxa variável</strong>:
+            </p>
+
+            <div class="flex-duas-colunas">
+
+                <div class="cartao-cotidiano">
+                <h3>1. Corrida de Táxi ou Aplicativo</h3>
+                <img src="imagens/cotidiano-taxi.jpg" alt="Exemplo de função afim corrida de táxi." class="img-cotidiano">
+                <p>
+                        Imagine uma corrida com bandeirada fixa de <strong>R$ 5,00</strong> mais <strong>R$ 3,00</strong> por quilômetro rodado (<em>x</em>).
+                    </p>
+                    <p>
+                        <strong>Lei da função:</strong> <code>f(x) = 3x + 5</code><br>
+                        Se você andar <strong>10 km</strong>, pagará: <code>f(10) = 3(10) + 5 = R$ 35,00</code>.
+                    </p>
+                    </div>
+
+                    <div class="cartao-cotidiano">
+                    <h3>2. Salário Fixo com Comissão</h3>
+                    <img src="imagens/cotidiano-salario.jpg"Exemplo de função afim em salário com comissão f(x) = 1500 + 50x" class="img-cotidiano">
+                    <p>
+                        Um vendedor recebe um salário fixo de <strong>R$ 1.500,00</strong> por mês mais <strong>R$ 50,00</strong> de comissão por produto vendido (<em>x</em>).
+                    </p>
+                    <p>
+                        <strong>Lei da função:</strong> <code>f(x) = 1500 + 50x</code><br>
+                        Se vender <strong>8 produtos</strong>, receberá: <code>f(8) = 1500 + 50(8) = R$ 1.900,00</code>.
+                    </p>
+                </div>
+
+            </div>
+
+              <div style="text-align: center; margin-top: 25px;">
+                <a href="afim-exercicios.html" class="botao">Praticar Exercícios →</a>
+            </div>
+            </section>
+            
+        </main>
+    
+    
+</body>
+</html>
