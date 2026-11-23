@@ -49,6 +49,7 @@ header p {
     text-decoration:none;
     padding: 14px 22px;
     font-weight: 600;
+    transition: all 0.3s ease;
     
 }
 
@@ -72,6 +73,70 @@ section h2 {
     color: #1e3c72;
     margin-bottom: 15px;
     border-bottom: 2px solid #e1e8ed;
+    padding-bottom: 8px;
+}
+
+section h3 {
+    color: #2a5298;
+    margin: 18px 0 10px 0;
+}
+
+section p, section ul {
+   margin-bottom: 12px;
+}
+
+section ul {
+    padding-left: 22px;
+}
+
+section li {
+    margin-bottom: 8px;
+}
+
+.grade-cartoes {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 15px;
+}
+
+.cartao {
+    flex: 1;
+    min-width: 280px;
+    background-color: #f9fbfd;
+    border: 1px solid #dce4ec;
+    border-radius: 8px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+.cartao img {
+    width: 100%;
+    height: 400px;
+    border-radius: 10px;
+    margin-top: 12px;
+    border: 1px solid #e1e8ed;
+}
+
+.botao {
+    display: inline-block;
+    background-color: #2a5298;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10px 18px;
+    border-radius: 5px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 15px;
+    transition: all 0.5s ease;
+}
+
+.botao:hover {
+    background-color: #1973aa;
+    transform: translateY(-2px);
 }
 
 .container {
@@ -97,8 +162,23 @@ section h2 {
 }
 
 footer {
+    background-color: #162c54;
+    color: #ffffff;
     text-align: center;
+    padding: 20px 0;
     font-weight: 200px;
+    margin-top: 30px;
+    font-size: 0.9rem;
+}
+
+footer a {
+    color: #a3c2ff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer:hover {
+    text-decoration: underline;
 }
 
 
