@@ -7,8 +7,9 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header id="=topo">
-        <div class="container">
+    
+    <header>
+        <div>
             <h1>Portal das Funções Matemáticas</h1>
             <p>Aprendendo de forma visual e prática os conceitos das Funções de 1° e 2° grau</p>
         </div>
@@ -19,6 +20,7 @@
                 <li><a href="afim.html">Função Afim (1° Grau)</a></li>
                 <li><a href="quadratica.html">Função Quadrática(2° Grau)</a></li>
                 <li><a href="#links-uteis">Materiais Externos</a></li>
+                <li><a href="#contato-whatsapp">Dúvidas</a></li>
             </ul>
         </nav>
 
@@ -26,7 +28,7 @@
 
     <main>
 
-        <section class="introducao">
+        <section>
 
             <h2>O que são Funções Matemáticas?</h2>
 
@@ -43,14 +45,14 @@
                 Por fim, a máquina entrega um único resultado na saída, que chamamos de <strong>y</strong> ou <strong>f(x)</strong> (a Imagem).
             </p>
             <p>
-                Por exemplo, se a regra da nossa máquina for <code>f(x) = 2x + 3</code>, ao colocarmos o número <strong>3</strong> (entrada x), 
-                a máquina vai calcular <code>2 × 3 + 3</code> e colocará o número <strong>9</strong> (saída y) na cesta. Se colocarmos o <strong>5</strong>, 
+                Por exemplo, se a regra da nossa máquina for f(x) = 2x + 3, ao colocarmos o número <strong>3</strong> (entrada x), 
+                a máquina vai calcular 2 × 3 + 3 e colocará o número <strong>9</strong> (saída y) na cesta. Se colocarmos o <strong>5</strong>, 
                 ela processará e soltará o <strong>13</strong>. Cada valor que entra tem direito a apenas uma transformação de saída!
             </p>
 
             <div class="maquina-funcao">
                 <div class="imagem-maquina">
-            <img src="imagens/x-da-funcao.jpg"entrada da função">
+            <img src="imagens/x-da-funcao.jpg"alt=" entrada da função">
             <img src="imagens/maquina-funcao-nova.jpg" alt="regra da função representada metaforicamente como uma máquina">
             <img src="imagens/y-da-funcao.jpg" alt="saida da função">
             
@@ -86,7 +88,7 @@
             </div>
         </section>
 
-        <section class="topicos">
+        <section>
 
             <h2>Escolha um tópico para apronfundar</h2>
 
@@ -121,6 +123,48 @@
             </ul>
 
         </section>
+
+        <section id="contato-whatsapp">
+    <h2>Dúvidas</h2>
+    <h3>Após os estudos ainda restou alguma dúvida?</h3>
+    <p>Preencha os campos abaixo para enviar sua dúvida diretamente para o WhatsApp da nossa equipe:</p>
+
+    <div class="flex-duvidas">
+        <form class="coluna-forma" onsubmit="enviarWhatsapp(event)">
+            <div class="form-linha">
+                <div class="campo-grupo">
+                    <label for="nome">Seu nome:</label>
+                    <input type="text" id="nome" placeholder="Digite seu nome" required>
+                    </div>
+
+                    <div class="campo-grupo">
+                        <label for="assunto">Tema da Dúvida:</label>
+                    <select id="assunto">
+                        <option value="Função Afim (1° Grau) ">Função Afim (1° Grau)</option>
+                        <option value="Função Quadrática(2° Grau)">Função Quadrática(2° Grau)</option>
+                        <option value="Aplicações Práticas">Aplicações Práticas</option>
+                    </select>
+                </div> 
+            </div>
+
+            <div class="campo-grupo">
+                <label for="duvida">Sua Dúvida:</label>
+                <textarea id="duvida" rows="4" placeholder="Escreva aqui sua pergunta..." required></textarea>
+            </div>
+
+            <button type="submit" class="botao-whatsapp">Enviar Dúvida via Whatsapp</button>
+
+            <div class="frase-filosofo">
+                <h3>"A dúvida é o princípio da sabedoria."</h3>
+                <span>— Aristóteles</span>
+            </div>
+        </form>
+
+        <div class="coluna-img-duvidas">
+            <img src="imagens/duvida-whatsapp.jpg" alt=""Mascote convidando para enviar a dúvida>
+        </div>
+    </div>
+
     </main>
 
     <footer>
@@ -129,6 +173,27 @@
             <p><a href="#topo">Voltar ao topo ↑</a></p>
         </div>
     </footer>
+
+    <script>
+        
+        function enviarWhatsapp(event) {
+            event.preventDefault();
+
+            const nome = document.getElementById("nome").value.trim();
+            const assunto = document.getElementById("assunto").value.trim();
+            const duvida = document.getElementById("duvida").value.trim();
+
+            const telefone = "5581984248299";
+
+            const mensagem = `Olá! Meu nome é *${nome}*.\n` +
+                            `*Assunto:* ${assunto}\n` +
+                            `*Dúvida:* ${duvida}`;
+
+            const url = `https://wa.me/${telefone}?text=${encodeURIComponent(mensagem)}`;
+    window.open(url, "_blank");
+        }
+
+    </script>
     
 </body>
 </html>
