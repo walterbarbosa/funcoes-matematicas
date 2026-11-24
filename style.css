@@ -1,3 +1,13 @@
+/* ==========================================================================
+   BLOCO 1: CONFIGURAÇÕES GERAIS E CORPO DA PÁGINA
+   ========================================================================== */
+*{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: #f4f7f9;
@@ -5,33 +15,43 @@ body {
 }
 
 
+/* ==========================================================================
+   BLOCO 2: CABEÇALHO (HEADER)
+   ========================================================================== */
+
 header {
-    background-image: linear-gradient(to bottom, rgba(244, 247, 249, 0.35), rgba(244, 247, 249, 0.55)), url('imagens/Fundo-cabecalho.jpg');
+    background-image: url('imagens/Fundo-cabecalho.jpg');
     background-size: cover;
     padding-top: 30px;
     text-align: center;
+    background-position: center;
 }
 
 header h1 {
     font-size: 2.3rem;
-    color: #162c54;
-    font-weight: 800;
-    margin-bottom: 8px;
+    color: #032655;
+    font-weight: 700;
+    margin-bottom: 5px;
 }
 
 header p {
     font-size: 1.1rem;
-    color: #1e3c72;
-    font-weight: 600;
+    color: #04265f;
+    font-weight: 620;
     margin-bottom: 25px;
-    text-shadow: 1px 1px 3px rgba(255, 255, 255, 0.9);
 }
+
+
+/* ==========================================================================
+   BLOCO 3: MENU DE NAVEGAÇÃO PRINCIPAL
+   ========================================================================== */
 
 .menu-principal {
     background-color: #162c54;
     border-top: 1px solid rgba(255, 255, 255, 0.15);
     justify-content: center;
     align-items: center;
+    margin-bottom: 15px;
 }
 
 .menu-principal ul {
@@ -39,32 +59,41 @@ header p {
     padding: 0;
     list-style: none;
     display: flex;
+    gap: 20px;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    
 }
 
 .menu-principal li a {
     display: block;
     color: #ffffff;
-    text-decoration:none;
+    text-decoration: none;
     padding: 10px;
     font-weight: 600;
     transition: all 0.3s ease;
-    
 }
 
 .menu-principal li a:hover {
     transform: translateY(-2px);
 }
 
+.menu-principal a:hover,
+.menu-principal a.ativo {
+    background-color: #2a5298;
+    border-radius: 8px;
+}
+
+
+/* ==========================================================================
+   BLOCO 4: ESTRUTURA GERAL DAS SEÇÕES E TEXTOS
+   ========================================================================== */
 
 section {
     background-color: #ffffff;
     padding: 25px;
-    margin-bottom: 25px;
-    border-radius: 25px;
+    margin-bottom: 15px;
+    border-radius: px;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
 }
 
@@ -77,6 +106,7 @@ section h2 {
 
 section h3 {
     color: #2a5298;
+    margin-bottom: 15px;
 }
 
 section p, section ul {
@@ -90,6 +120,11 @@ section ul {
 section li {
     margin-bottom: 8px;
 }
+
+
+/* ==========================================================================
+   BLOCO 5: GRADE E CARTÕES DE TÓPICOS
+   ========================================================================== */
 
 .grade-cartoes {
     display: flex;
@@ -108,25 +143,27 @@ section li {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-
 }
 
 .cartao img {
     width: 90%;
     height: 300px;
-    margin: 15px auto;
-    border: none;
+    margin: 15px;
 }
 
+
+/* ==========================================================================
+   BLOCO 6: BOTÕES DE NAVEGAÇÃO E AÇÃO
+   ========================================================================== */
+
 .botao {
-    display: inline-block;
     align-self: center;
     background-color: #2a5298;
     color: #ffffff;
     text-decoration: none;
     width: 250px;
-    padding: 10px 18px;
-    border-radius: 10px;
+    padding: 10px 22px;
+    border-radius: 15px;
     font-weight: bold;
     text-align: center;
     margin-top: 15px;
@@ -139,28 +176,36 @@ section li {
 }
 
 
+
+/* ==========================================================================
+   BLOCO 7: BLOCO DE IMAGEM COM MOLDURA
+   ========================================================================== */
+
 .bloco-imagem {
     text-align: center;
     margin: 25px auto;
     background-color: #ffffff;
     padding: 15px;
-    border-radius: 8px;
     box-shadow: 0 2px 0 rgba(0, 0, 0, 0.08);
 }
 
 .bloco-imagem img {
-    max-width: 550px;
+    max-width: 600px;
     width: 100%;
     height: auto;
-    border-radius: 6px;
+    
 }
+
+
+/* ==========================================================================
+   BLOCO 8: MÁQUINA DE FUNÇÕES (METÁFORA VISUAL)
+   ========================================================================== */
 
 .maquina-funcao {
     background-color: transparent;
-    padding: 10px auto;
     margin: 25px auto;
     border: none;
-    box-shadow:none;
+    box-shadow: none;
     text-align: center;
 }
 
@@ -174,7 +219,6 @@ section li {
     border: none;
 }
 
-
 .imagem-maquina img {
     width: 30%;
     max-width: 500px;
@@ -183,25 +227,10 @@ section li {
     transition: transform 0.4s ease, filter 0.4s ease;
 }
 
-footer {
-    background-color: #162c54;
-    color: #ffffff;
-    text-align: center;
-    padding: 20px 0;
-    font-weight: 200px;
-    margin-top: 30px;
-    font-size: 0.9rem;
-}
 
-footer a {
-    color: #a3c2ff;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-footer:hover {
-    text-decoration: underline;
-}
+/* ==========================================================================
+   BLOCO 9: LAYOUT DE DUAS COLUNAS E FÓRMULAS MATEMÁTICAS
+   ========================================================================== */
 
 .flex-duas-colunas {
     display: flex;
@@ -218,10 +247,9 @@ footer:hover {
     border-radius: 6px;
 }
 
-.col-afim h3{
+.col-afim h3 {
     color: #1e3c72;
     margin-bottom: 10px;
-
 }
 
 .destaque-formula {
@@ -229,11 +257,16 @@ footer:hover {
     color: #2a5298;
     font-weight: bold;
     text-align: center;
-    background-color:#f0f4f8;
+    background-color: #f0f4f8;
     padding: 10px;
     border-radius: 6px;
     margin: 12px;
 }
+
+
+/* ==========================================================================
+   BLOCO 10: TABELAS DE VALORES E PARES ORDENADOS
+   ========================================================================== */
 
 .tabela-valores {
     width: 100%;
@@ -241,8 +274,7 @@ footer:hover {
     margin: 25px 0;
     background-color: #ffffff;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
-    border-radius: 10px;
-       
+    border-radius: 8px;
 }
 
 .tabela-valores th {
@@ -259,6 +291,11 @@ footer:hover {
     text-align: center;
     border-radius: 12px;
 }
+
+
+/* ==========================================================================
+   BLOCO 11: CARTÕES DE APLICAÇÃO NO COTIDIANO
+   ========================================================================== */
 
 .cartao-cotidiano {
     flex: 1;
@@ -284,8 +321,12 @@ footer:hover {
 
 .conclusao {
     padding: 85px 5px 5px;
-    
 }
+
+
+/* ==========================================================================
+   BLOCO 12: FAIXA COMEMORATIVA FINAL
+   ========================================================================== */
 
 .faixa-comemoracao {
     display: flex;
@@ -300,7 +341,6 @@ footer:hover {
     max-width: 290px;
     height: auto;
     border: none;
-
 }
 
 .img-boneco {
@@ -308,18 +348,15 @@ footer:hover {
 }
 
 .img-palavra-quadratica {
-   max-width: 450px;
+    max-width: 450px;
     height: auto;
     border: none;  
 }
 
 
-.campo-grupo {
-    display: flex;
-    flex-direction: column;
-    flex: 1;
-    min-width: 320px;
-}
+/* ==========================================================================
+   BLOCO 13: FORMULÁRIO DE DÚVIDAS (WHATSAPP) E IMAGEM DE DUVIDA
+   ========================================================================== */
 
 .flex-duvidas {
     display: flex;
@@ -334,7 +371,9 @@ footer:hover {
     flex: 2;
     max-width: 560px;
     min-width: 300px;
+    margin-top: 15px;
 }
+
 
 .form-linha {
     display: flex;
@@ -344,8 +383,15 @@ footer:hover {
     margin-bottom: 12px;
 }
 
-.form-linha  .campo-grupo {
+.form-linha .campo-grupo {
     max-width: 260px;
+}
+
+.campo-grupo {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    min-width: 270px;
 }
 
 .campo-grupo label {
@@ -357,7 +403,7 @@ footer:hover {
 
 .campo-grupo input,
 .campo-grupo select {         
-    padding: 6px 10px;
+    padding: 5px 10px;
     border: 1px solid #cbd5e1;
     border-radius: 6px;
     font-size: 0.95rem;
@@ -366,7 +412,7 @@ footer:hover {
 }
 
 .campo-grupo textarea {
-    padding: 8px 10px;
+    padding: 5px;
     border: 1px solid #cbd5e1;
     border-radius: 6px;
     font-size: 0.95rem;
@@ -384,14 +430,15 @@ footer:hover {
 
 .coluna-img-duvidas img {
     width: auto;
-    height: 350px;
+    height: 450px;
     mix-blend-mode: multiply;
 }
 
 .botao-whatsapp {
-    background-color: #172ebf;
+    cursor: pointer;
+    background-color: #2a5298;
     color: #efebeb;
-    margin-top: 10px;
+    margin-top: 20px;
     text-align: center;
     width: 250px;
     border-radius: 8px;
@@ -402,13 +449,13 @@ footer:hover {
 }
 
 .botao-whatsapp:hover {
-    background-color: #47ea2a;
-    color: #333333;
-    
+    background-color: #1973aa;
+    color: #ecedf0;
+    transform: translateY(-2px);
 }
 
 .frase-filosofo {
-    margin-top: 22px;
+    margin-top: 95px;
     padding: 12px 16px;
     background-color: #f8fafc;
     border-left: 4px solid #2a5298;
@@ -428,3 +475,24 @@ footer:hover {
     color: #555555;
     font-weight: bold;
 }
+
+
+/* ==========================================================================
+   BLOCO 14: RODAPÉ
+   ========================================================================== */
+footer {
+    background-color: #162c54;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px 0;
+    font-weight: 200px;
+    margin-top: 30px;
+    font-size: 0.9rem;
+}
+
+footer a {
+    color: #a3c2ff;
+    text-decoration: none;
+    font-weight: bold;
+}
+

@@ -7,8 +7,11 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
-    <header>
+
+    <!-- =========================================================
+         BLOCO 1: CABEÇALHO E MENU DE NAVEGAÇÃO
+         ========================================================= -->
+    <header id="topo">
         <div>
             <h1>Portal das Funções Matemáticas</h1>
             <p>Aprendendo de forma visual e prática os conceitos das Funções de 1° e 2° grau</p>
@@ -16,7 +19,7 @@
 
         <nav class="menu-principal">
             <ul>
-                <li><a href="index.html">Início</a></li>
+                <li><a href="index.html" class="ativo">Início</a></li>
                 <li><a href="afim.html">Função Afim (1° Grau)</a></li>
                 <li><a href="quadratica.html">Função Quadrática(2° Grau)</a></li>
                 <li><a href="#links-uteis">Materiais Externos</a></li>
@@ -26,7 +29,12 @@
 
     </header>
 
+    <!-- =========================================================
+         BLOCO 2: CONTEÚDO PRINCIPAL
+         ========================================================= -->
     <main>
+
+        <!-- Seção 1: Introdução -->
 
         <section>
 
@@ -52,13 +60,12 @@
 
             <div class="maquina-funcao">
                 <div class="imagem-maquina">
-            <img src="imagens/x-da-funcao.jpg"alt=" entrada da função">
+            <img src="imagens/x-da-funcao.jpg"entrada da função">
             <img src="imagens/maquina-funcao-nova.jpg" alt="regra da função representada metaforicamente como uma máquina">
             <img src="imagens/y-da-funcao.jpg" alt="saida da função">
             
             </div>
             </div>
-            
 
             </p>
             <p>Para que uma relação entre conjuntos seja considerada uma função, ela precisa obedecer rigorosamente a duas regras:</p>
@@ -80,13 +87,14 @@
                 Enquanto o Contradomínio reúne todos os valores possíveis de chegada no conjunto B, o <strong>Conjunto Imagem</strong> 
                 é formado exclusivamente pelos elementos de B que efetivamente receberam alguma flecha (ou seja, os resultados reais calculados pela função).
             </p>
-            <p>Neste portal educativo, dividimos o estudo em dois grandes pilares para facilitar o seu aprendizado</p>
 
             <div class="bloco-imagem">
                 <img src="imagens/Diagrama-de-Venn.jpg" alt="Diagrama de Venn mostrando a relação entre o conjunto Domínio A e o Contradomínio B, destacando o Conjunto Imagem.">
-                
+
             </div>
         </section>
+
+        <!-- Seção 2: Cartões de Tópicos de Estudo. -->
 
         <section>
 
@@ -112,7 +120,9 @@
             </div>
         </section>
 
-        <section id="links-uteis" class="links-externos">
+        <!-- Seção 3: Materiais Externos -->
+
+        <section>
 
             <h2>Materiais Externos Recomendados</h2>
             <p>Quer apronfundar ainda mais ou testar gráficos interativos? Confira estes portais gratuitos:</p>
@@ -124,10 +134,12 @@
 
         </section>
 
-        <section id="contato-whatsapp">
+        <!-- Seção 4: Dúvidas -->
+
+        <section>
     <h2>Dúvidas</h2>
     <h3>Após os estudos ainda restou alguma dúvida?</h3>
-    <p>Preencha os campos abaixo para enviar sua dúvida diretamente para o WhatsApp da nossa equipe:</p>
+    <p style="margin-top: 25px;">Preencha os campos abaixo para enviar sua dúvida diretamente para o nosso WhatsApp</p>
 
     <div class="flex-duvidas">
         <form class="coluna-forma" onsubmit="enviarWhatsapp(event)">
@@ -167,13 +179,19 @@
 
     </main>
 
+    <!-- =========================================================
+         BLOCO 3: RODAPÉ
+         ========================================================= -->
     <footer>
-        <div class="container">
+        <div>
             <p>Projeto de Introdução a programação Web- UNICAP(Universidade Católica de Pernambuco)</p>
             <p><a href="#topo">Voltar ao topo ↑</a></p>
         </div>
     </footer>
 
+    <!-- =========================================================
+         BLOCO 4: SCRIPT FUNÇÃO WHATSAPP
+         ========================================================= -->
     <script>
         
         function enviarWhatsapp(event) {
@@ -185,9 +203,9 @@
 
             const telefone = "5581984248299";
 
-            const mensagem = `Olá! Meu nome é *${nome}*.\n` +
-                            `*Assunto:* ${assunto}\n` +
-                            `*Dúvida:* ${duvida}`;
+            const mensagem = `Olá! Meu nome é ${nome}.\n` +
+                            `Assunto: ${assunto}\n` +
+                            `Dúvida: ${duvida}`;
 
             const url = `https://wa.me/${telefone}?text=${encodeURIComponent(mensagem)}`;
     window.open(url, "_blank");
