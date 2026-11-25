@@ -159,7 +159,8 @@ section li {
    ========================================================================== */
 
 .botao {
-    align-self: center;
+    display: block;
+    margin: 25px auto 0 auto;
     background-color: #2a5298;
     color: #ffffff;
     text-decoration: none;
@@ -168,7 +169,7 @@ section li {
     border-radius: 15px;
     font-weight: bold;
     text-align: center;
-    margin-top: auto;
+    margin-top: 10px;
     transition: all 0.5s ease;
 }
 
@@ -203,12 +204,8 @@ section li {
    BLOCO 8: MÁQUINA DE FUNÇÕES (METÁFORA VISUAL)
    ========================================================================== */
 
-.maquina-funcao {
-    background-color: transparent;
-    margin: 25px auto;
-}
-
 .imagem-maquina {
+    margin: 25px auto;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -358,8 +355,7 @@ section li {
 
 .flex-duvidas {
     display: flex;
-    justify-content: space-between;
-    gap: 30px;
+    gap: 250px;
     margin-top: 10px;
     flex-wrap: wrap;
 }
@@ -375,9 +371,8 @@ section li {
 .form-linha {
     display: flex;
     justify-content: space-between;
-    gap: 15px;
     margin-top: 0;
-    margin-bottom: 12px;
+    margin-bottom: 25px;
 }
 
 .form-linha .campo-grupo {
@@ -417,18 +412,12 @@ section li {
     resize: vertical;
 }
 
-.coluna-img-duvidas {
+.img-duvidas {
     flex: 1;
-    min-width: 220px;
-    display: flex;
-    justify-content: center;
-    
-}
-
-.coluna-img-duvidas img {
-    width: auto;
-    height: 420px;
+    max-width: 400px;
+    height: auto;
     mix-blend-mode: multiply;
+    align-self: center;
 }
 
 .botao-whatsapp {
@@ -461,14 +450,14 @@ section li {
 
 .frase-filosofo h3 {
     margin: 0 0 4px 0;
-    font-size: 1.05rem;
+    font-size: 1.2rem;
     font-style: italic;
     font-weight: 600;
     color: #162b52;
 }
 
 .frase-filosofo span {
-    font-size: 0.9rem;
+    font-size: 1.1rem;
     color: #555555;
     font-weight: bold;
 }
