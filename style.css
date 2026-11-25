@@ -49,8 +49,6 @@ header p {
 .menu-principal {
     background-color: #162c54;
     border-top: 1px solid rgba(255, 255, 255, 0.15);
-    justify-content: center;
-    align-items: center;
     margin-bottom: 15px;
 }
 
@@ -74,11 +72,10 @@ header p {
     transition: all 0.3s ease;
 }
 
-.menu-principal li a:hover {
+.menu-principal a:hover {
     transform: translateY(-2px);
 }
 
-.menu-principal a:hover,
 .menu-principal a.ativo {
     background-color: #2a5298;
     border-radius: 8px;
@@ -93,7 +90,7 @@ section {
     background-color: #ffffff;
     padding: 25px;
     margin-bottom: 15px;
-    border-radius: px;
+    border-radius: 6px;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
 }
 
@@ -110,7 +107,7 @@ section h3 {
 }
 
 section p, section ul {
-   margin-bottom: 12px;
+   margin-bottom: 20px;
 }
 
 section ul {
@@ -138,17 +135,22 @@ section li {
     min-width: 280px;
     background-color: #ffffff;
     border-left: 4px solid #2a5298;
-    border-radius: 8px;
+    border-radius: 15px;
     padding: 20px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
 
+.cartao p {
+    min-height: 48px;
+}
+
 .cartao img {
-    width: 90%;
+    width: 80%;
     height: 300px;
-    margin: 15px;
+    margin: 15px auto;
+    mix-blend-mode: multiply;
 }
 
 
@@ -166,7 +168,7 @@ section li {
     border-radius: 15px;
     font-weight: bold;
     text-align: center;
-    margin-top: 15px;
+    margin-top: auto;
     transition: all 0.5s ease;
 }
 
@@ -204,9 +206,6 @@ section li {
 .maquina-funcao {
     background-color: transparent;
     margin: 25px auto;
-    border: none;
-    box-shadow: none;
-    text-align: center;
 }
 
 .imagem-maquina {
@@ -216,15 +215,17 @@ section li {
     gap: 15px;
     max-width: 1000px;
     margin: 0 auto;
-    border: none;
 }
 
 .imagem-maquina img {
     width: 30%;
     max-width: 500px;
     height: auto;
-    display: block;
-    transition: transform 0.4s ease, filter 0.4s ease;
+}
+
+.imagem-maquina img:nth-child(2) {
+    width: 41%;         
+    max-width: 600px;
 }
 
 
@@ -235,7 +236,6 @@ section li {
 .flex-duas-colunas {
     display: flex;
     gap: 25px;
-    align-items: stretch;
     margin-top: 15px;
 }
 
@@ -243,7 +243,7 @@ section li {
     flex: 1;
     background-color: #f8fafc;
     border-left: 4px solid #2a5298;
-    padding: 18px 20px;
+    padding: 18px 35px;
     border-radius: 6px;
 }
 
@@ -274,14 +274,13 @@ section li {
     margin: 25px 0;
     background-color: #ffffff;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
-    border-radius: 8px;
 }
 
 .tabela-valores th {
     background-color: #2a5298;
     color: #ffffff;
     font-weight: bold;
-    padding: 12px;
+    padding: 10px;
     text-align: center;
 }
 
@@ -289,7 +288,7 @@ section li {
     padding: 12px;
     border-bottom: 2px solid #e1e8ed;
     text-align: center;
-    border-radius: 12px;
+    
 }
 
 
@@ -316,7 +315,7 @@ section li {
     width: 85%;
     max-width: 380px;
     margin: 12px auto;
-    border: none;
+    mix-blend-mode: multiply;
 }
 
 .conclusao {
@@ -350,7 +349,6 @@ section li {
 .img-palavra-quadratica {
     max-width: 450px;
     height: auto;
-    border: none;  
 }
 
 
@@ -360,7 +358,6 @@ section li {
 
 .flex-duvidas {
     display: flex;
-    align-items: flex-start;
     justify-content: space-between;
     gap: 30px;
     margin-top: 10px;
@@ -377,7 +374,7 @@ section li {
 
 .form-linha {
     display: flex;
-    align-items: flex-end;
+    justify-content: space-between;
     gap: 15px;
     margin-top: 0;
     margin-bottom: 12px;
@@ -425,12 +422,12 @@ section li {
     min-width: 220px;
     display: flex;
     justify-content: center;
-    align-items: center;
+    
 }
 
 .coluna-img-duvidas img {
     width: auto;
-    height: 450px;
+    height: 420px;
     mix-blend-mode: multiply;
 }
 
@@ -455,7 +452,7 @@ section li {
 }
 
 .frase-filosofo {
-    margin-top: 95px;
+    margin-top: 90px;
     padding: 12px 16px;
     background-color: #f8fafc;
     border-left: 4px solid #2a5298;
